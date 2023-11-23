@@ -1,0 +1,19 @@
+.Mnav {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  button {
+    border: none;
+    border-radius: 0.79581rem;
+    background: #3d3d3d;
+    min-width: 15rem;
+    min-height: 4rem;
+    color: #4bffb3;
+    font-size: 1.125rem;
+    font-weight: 500;
+    font-family: inherit;
+  }
+  .green {
+    background: rgba(75, 255, 179, 0.35);
+  }
+}

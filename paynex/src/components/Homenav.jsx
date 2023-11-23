@@ -1,35 +1,40 @@
 import React, { useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import Gcontext from "../context/Gcontext";
-import Dashnav from "./shared/Dashnav";
 import Headnav from "./shared/Headnav";
 import style from "./Nav.module.css";
 import Signinbtn from "./shared/signinbtn/Signinbtn";
+import bell from "../assets/images/bell.svg";
 
 function Homenav({ children }) {
   const { useractive } = useContext(Gcontext);
   let location = useLocation();
   var dump;
 
-  if (useractive === true && location.pathname === "/dashboard") {
+  if (
+    useractive === true &&
+    (location.pathname === "/dashboard" || /dashboard/.test(location.pathname))
+  ) {
     dump = (
       <>
-        <p>Dashboard {location.pathname}</p>
-        <Dashnav />
-        {children}
+        <Link to="/dashboard/activity">
+          <img src={bell} alt="" />
+        </Link>
       </>
     );
   } else if (
-    useractive === false &&
-    (location.pathname === "/" || "/services" || "/about" || "/signin")
+    location.pathname === "/" ||
+    "/services" ||
+    "/about" ||
+    "/signin"
   ) {
     dump = (
       <>
         <nav>
-          <Link to="/">Landing</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/about">About</Link>
-          <Link to="/dashboard">Dashboard</Link>
+          <AnchorLink href="#services">Services</AnchorLink>
+          <AnchorLink href="#about">About</AnchorLink>
+          <AnchorLink href="#contact">Contact</AnchorLink>
         </nav>
         <Signinbtn />
       </>

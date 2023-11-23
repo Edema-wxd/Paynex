@@ -12,6 +12,7 @@ import Usercard from "./components/usercard/Usercard";
 import Deposit from "./components/deposit/Deposit";
 import Help from "./components/help/Help";
 import Activities from "./components/activities/Activities";
+import Nopage from "./components/nopage/Nopage";
 
 function App() {
   return (
@@ -27,13 +28,12 @@ function App() {
           <Route path="dashboard" element={<Dashboard />}>
             <Route path="deposit" element={<Deposit />}></Route>
             <Route path="transfer" element={<h1>Transfer</h1>}></Route>
-            <Route path="signout" element={<h1>Signout</h1>}></Route>
             <Route path="activity" element={<Activities />}></Route>
             <Route path="cards" element={<Usercard />}></Route>
             <Route path="profile" element={<Profile />}></Route>
             <Route path="help" element={<Help />}></Route>
           </Route>
-          <Route path="*" element={<h1>no page</h1>}></Route>
+          <Route path="*" element={<Nopage />}></Route>
         </Routes>
       </GProvider>
     </>

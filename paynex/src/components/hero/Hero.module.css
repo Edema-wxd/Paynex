@@ -1,6 +1,86 @@
 .Hero {
-  background-image: url("../../assets/images/homebg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
+  h1 {
+    color: #fff;
+    font-size: 4.375rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 108.25%; /* 4.73594rem */
+  }
+  h2 {
+    color: #fff;
+    font-size: 4.0625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  h3 {
+    color: #4bffb3;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+  }
+  h4 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 99.844%; /* 2.49613rem */
+  }
+  .Hbody {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .Htxt {
+      display: flex;
+      flex-direction: column;
+      max-width: 50rem;
+
+      button {
+        color: #2e2e2e;
+        font-family: inherit;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 600;
+        border: none;
+        line-height: normal;
+        padding: 1rem;
+        width: fit-content;
+        border-radius: 3.125rem;
+        background: #72ffc3;
+      }
+    }
+  }
+  .SCards {
+    display: grid;
+    grid-template-areas: ". .";
+  }
+  .Abox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .Atxt {
+      width: 45rem;
+      p {
+        color: #fff;
+        font-size: 1.969rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+  .Cbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      color: #fff;
+      text-align: center;
+      font-size: 1.875rem;
+      font-weight: 400;
+    }
+  }
 }
