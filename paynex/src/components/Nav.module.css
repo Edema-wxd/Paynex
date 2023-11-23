@@ -1,0 +1,22 @@
+.Nav {
+  background: #2e2e2e;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  nav {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    height: fit-content;
+    margin: auto 0;
+  }
+  a {
+    text-decoration: none;
+    height: fit-content;
+    margin: auto;
+    color: #d9d9d9;
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+}

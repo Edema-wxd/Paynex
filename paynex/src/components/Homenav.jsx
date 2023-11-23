@@ -2,35 +2,48 @@ import React, { useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Gcontext from "../context/Gcontext";
 import Dashnav from "./shared/Dashnav";
+import Headnav from "./shared/Headnav";
+import style from "./Nav.module.css";
+import Signinbtn from "./shared/signinbtn/Signinbtn";
 
-function Homenav() {
+function Homenav({ children }) {
   const { useractive } = useContext(Gcontext);
   let location = useLocation();
+  var dump;
 
   if (useractive === true && location.pathname === "/dashboard") {
-    return (
-      <p>
-        {" "}
-        Dashboard {location.pathname} <Dashnav />
-      </p>
+    dump = (
+      <>
+        <p>Dashboard {location.pathname}</p>
+        <Dashnav />
+        {children}
+      </>
     );
   } else if (
-    useractive === true &&
+    useractive === false &&
     (location.pathname === "/" || "/services" || "/about" || "/signin")
   ) {
-    return (
-      <nav>
-        <p>{location.pathname}</p>
-        <Link to="/">Landing</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/about">About</Link>
-        <Link to="/signin">signin</Link>
-        <Link to="/dashboard">Dashboard</Link>
-      </nav>
+    dump = (
+      <>
+        <nav>
+          <Link to="/">Landing</Link>
+          <Link to="/services">Services</Link>
+          <Link to="/about">About</Link>
+          <Link to="/dashboard">Dashboard</Link>
+        </nav>
+        <Signinbtn />
+      </>
     );
   } else {
-    return <Link to="/signin">Signin</Link>;
+    dump = <Link to="/signin">Signin</Link>;
   }
+
+  return (
+    <div className={style.Nav}>
+      <Headnav />
+      {dump}
+    </div>
+  );
 }
 
 export default Homenav;

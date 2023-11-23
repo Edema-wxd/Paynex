@@ -1,0 +1,19 @@
+.Sign {
+  background-image: url("../../assets/images/homebg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Signincard {
+  border-radius: 1.875rem;
+  background: #3d3d3d;
+  max-width: 36.1875rem;
+  max-height: 42.9375rem;
+  padding: 2.5rem;
+  display: flex;
+  text-align: center;
+}

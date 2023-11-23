@@ -1,0 +1,29 @@
+.Sign{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.Signinbtn,
+.Signupbtn {
+  border-radius: 1.25rem;
+  border: 1px solid #4bffb3;
+  background: inherit;
+  justify-content: space-between;
+  width: 10rem;
+  height: 3.5rem;
+  align-items: center;
+  text-align: center;
+  color: #4bffb3;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.Signupbtn {
+  justify-content: center;
+  align-items: center;
+  background: #4bffb3;
+  color: #2e2e2e;
+  font-size: 1.25rem;
+  font-weight: 500;
+}

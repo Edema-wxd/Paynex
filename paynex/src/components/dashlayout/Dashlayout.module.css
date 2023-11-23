@@ -1,0 +1,9 @@
+.Dashlayout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+}
