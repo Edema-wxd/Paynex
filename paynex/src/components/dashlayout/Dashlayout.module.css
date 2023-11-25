@@ -1,9 +1,64 @@
 .Dashlayout {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 6rem;
+  min-width: 21rem;
   div {
     display: flex;
     flex-direction: column;
+
+    a {
+      height: fit-content;
+      display: flex;
+      flex-direction: row;
+      gap: 1.5rem;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0.75rem 1.5rem;
+      color: #808080;
+      font-size: 1.5625rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-decoration: none;
+      img {
+        width: 3.25rem;
+        height: 3.25rem;
+        svg {
+          fill: #808080;
+        }
+      }
+    }
+    a:active {
+      color: #4bffb3;
+      img {
+        fill: #4bffb3;
+      }
+    }
   }
+  .DLlogout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+    gap: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    img {
+      width: 3.25rem;
+      height: 3.25rem;
+    }
+    p {
+      color: #808080;
+      font-size: 1.5625rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-decoration: none;
+    }
+  }
+}
+.Dashlayout + div {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }

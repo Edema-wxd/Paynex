@@ -23,12 +23,7 @@ function Homenav({ children }) {
         </Link>
       </>
     );
-  } else if (
-    location.pathname === "/" ||
-    "/services" ||
-    "/about" ||
-    "/signin"
-  ) {
+  } else if (location.pathname === "/" || "/services" || "/about") {
     dump = (
       <>
         <nav>
@@ -39,6 +34,8 @@ function Homenav({ children }) {
         <Signinbtn />
       </>
     );
+  } else if (location.pathname === "/signin") {
+    dump = <AnchorLink href="#about">About</AnchorLink>;
   } else {
     dump = <Link to="/signin">Signin</Link>;
   }

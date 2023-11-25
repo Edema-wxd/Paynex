@@ -2,10 +2,11 @@
   background-image: url("../../assets/images/homebg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 5rem;
+  height: 100vh;
 }
 
 .Signincard {
@@ -16,4 +17,80 @@
   padding: 2.5rem;
   display: flex;
   text-align: center;
+  flex-direction: column;
+  h6 {
+    color: #4bffb3;
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  p {
+    max-width: 21rem;
+    color: #d9d9d9;
+    text-align: center;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%; /* 1.43438rem */
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      p {
+        width: fit-content;
+        border-radius: 3.125rem;
+        background: #545454;
+        color: #d9d9d9;
+        text-align: center;
+        font-size: 0.75rem;
+        font-weight: 400;
+        line-height: 135%; /* 1.0125rem */
+        padding: 0.375rem 1rem;
+      }
+    }
+    input,
+    select {
+      outline: #4bffb3;
+      border-radius: 0.9375rem;
+      background: #545454;
+      color: #d9d9d9;
+      padding: 1rem 2rem;
+      font-family: inherit;
+      font-size: 1.0625rem;
+      border: none;
+      font-weight: 400;
+    }
+
+    button {
+      margin-top: 4rem;
+      border: none;
+      height: 4.1875rem;
+      padding: 1.1875rem;
+      border-radius: 0.9375rem;
+      background: #4bffb3;
+      color: #3d3d3d;
+      text-align: center;
+      font-family: inherit;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+  }
+  a {
+    margin-top: 2.5rem;
+    color: #4bffb3;
+    text-align: center;
+    font-family: inherit;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%; /* 1.26563rem */
+    text-decoration-line: underline;
+  }
 }

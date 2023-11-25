@@ -8,7 +8,7 @@ function Signinbtn() {
       <Link to="/signin">
         <button className={style.Signinbtn}>Sign in</button>
       </Link>
-      <Link to="/signin">
+      <Link to="/signin/signup">
         <button className={style.Signupbtn}>Sign up</button>
       </Link>
     </div>

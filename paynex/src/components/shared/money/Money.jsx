@@ -5,17 +5,19 @@ import eye from "../../../assets/images/eye.svg";
 
 function Money() {
   return (
-    <div className={style.Money}>
-      <div>
+    <div className={style.MMoney}>
+      <div className={style.Money}>
         <div>
-          <p>Available money</p>
-          <Link>
+          <Link to="/dashboard/profile">
             <button>My info</button>
           </Link>
         </div>
         <div>
-          <h2>$</h2>
-          <img src={eye} alt="" />
+          <p>Available money</p>
+          <h2>
+            $ 12000
+            <img src={eye} alt="" />
+          </h2>
         </div>
       </div>
       <div className={style.Mnav}>

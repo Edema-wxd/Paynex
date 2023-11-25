@@ -1,13 +1,20 @@
 import React from "react";
-import Dashcard from "../shared/cards/Dashcard";
 import Headercard from "../shared/cards/Headercard";
+import Noticecard from "../shared/cards/Noticecard";
+import style from "./Activities.module.css";
 
 function Activities() {
   return (
-    <>
-      <Headercard />
-      <Dashcard />
-    </>
+    <div className={style.Activities}>
+      <Headercard>
+        <p>Activity</p>
+      </Headercard>
+      <div>
+        <Noticecard type={"debit"} amount={590} user={"John Mark"} />
+        <Noticecard type={"debit"} amount={590} user={"John Mark"} />
+        <Noticecard type={"debit"} amount={590} user={"John Mark"} />
+      </div>
+    </div>
   );
 }
 

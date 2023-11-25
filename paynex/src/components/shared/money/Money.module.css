@@ -1,7 +1,53 @@
+.Money {
+  border-radius: 1.12744rem;
+  background: #3d3d3d;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    button {
+      width: 8.6215rem;
+      height: 2.71913rem;
+      padding: auto 2.26038rem;
+      border-radius: 0.46425rem;
+      background: rgba(75, 255, 179, 0.26);
+      border: none;
+      color: #4bffb3;
+      font-size: 1.125rem;
+      font-weight: 400;
+    }
+    img {
+      margin-left: 2rem;
+      width: 1.6785rem;
+      height: 1.6785rem;
+    }
+    p {
+      color: #8e8e8e;
+      font-size: 1.125rem;
+      font-weight: 400;
+    }
+    h2 {
+      margin: 0.5rem;
+      color: #fcfcfc;
+      font-size: 3.73838rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
 .Mnav {
+  margin-top: 1.5rem;
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
+  justify-content: space-between;
+
   button {
     border: none;
     border-radius: 0.79581rem;

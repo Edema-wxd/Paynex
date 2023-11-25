@@ -1,0 +1,44 @@
+.Moneycard {
+  display: flex;
+  flex-direction: column;
+  min-width: 14.37475rem;
+  height: 8.89869rem;
+  border-radius: 0.47919rem;
+  padding: 1rem;
+  gap: 1.5rem;
+  justify-content: center;
+
+  background: linear-gradient(249deg, #4bff93 0%, #32a528 100.65%);
+  .MCCardno {
+    color: #fff;
+    font-size: 0.99438rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.32588rem; /* 133.333% */
+  }
+  .MCCardinfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .MCCdataholder {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+  }
+  .MCCsubtxt {
+    color: #fff;
+    font-size: 0.49719rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.74581rem; /* 150% */
+    margin: 0;
+  }
+  .MCCsubtxt + p {
+    color: #fff;
+    font-size: 0.58006rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0.82869rem; /* 142.857% */
+  }
+}
