@@ -3,15 +3,74 @@
   flex-direction: column;
   gap: 2rem;
   width: 40rem;
-  >div{
+  > div {
     display: flex;
     flex-direction: column;
-    gap:1.5rem;
+    gap: 1.5rem;
   }
   .Tsubtxt {
     color: #d9d9d9;
     font-size: 1rem;
     margin: 0 0 1rem;
     font-weight: 400;
+  }
+  .TBbox {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.9375rem;
+    background: #3d3d3d;
+    padding: 1rem;
+  }
+  input {
+    margin-top: 3rem;
+    font-family: inherit;
+    border: none;
+    border-radius: 0.9375rem;
+    background: #545454;
+    padding: 1.3125rem;
+  }
+  .TBbtn {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 1.1875rem 0rem 1.125rem 0rem;
+    border-radius: 0.9375rem;
+    border: none;
+    background: #509276;
+    color: #3d3d3d;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  .TBTxt {
+    .TBThtxt {
+      color: #fcfcfc;
+      text-align: center;
+      font-size: 1.4375rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    .TBTsubtxt {
+      color: #8e8e8e;
+      font-family: Poppins;
+      font-size: 1.4375rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .TBTsubtxt + h6 {
+      margin: 0;
+      color: #fcfcfc;
+      font-size: 2.5rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .TBTinfotxt {
+      color: #fcfcfc;
+      font-size: 1.4375rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
   }
 }

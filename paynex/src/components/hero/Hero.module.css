@@ -55,6 +55,7 @@
   .SCards {
     display: grid;
     grid-template-areas: ". .";
+    gap: 3rem;
   }
   .Abox {
     display: flex;

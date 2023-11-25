@@ -42,3 +42,32 @@
     line-height: 0.82869rem; /* 142.857% */
   }
 }
+.MCCDardinfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  img {
+    margin-top: auto;
+    margin-bottom: 0;
+    width: 4.5rem;
+  }
+  .MCCDdataholder {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2.7rem;
+    .MCCardno {
+      color: #fff;
+      font-size: 1.4rem;
+      font-weight: 700;
+      line-height: 2.12138rem; /* 151.526% */
+    }
+    .MCCsubtxt {
+      color: #fff;
+      font-size: 1.375rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 2.12344rem; /* 154.433% */
+    }
+  }
+}

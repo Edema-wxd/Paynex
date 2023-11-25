@@ -1,11 +1,14 @@
 import React from "react";
+import style from "./Card.module.css";
 
-function Card() {
+function Card({ message, subtxt, img }) {
   return (
-    <div>
-      <h5></h5>
-      <p></p>
-      <img src="" alt="" />
+    <div className={style.Card}>
+      <div>
+        <h5>{message}</h5>
+        <p>{subtxt}</p>
+      </div>
+      <img src={img} alt="" />
     </div>
   );
 }

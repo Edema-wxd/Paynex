@@ -4,6 +4,10 @@ import Card from "../shared/cards/Card";
 import Contactform from "../shared/contactform/Contactform";
 import himg from "../../assets/images/heroimg.png";
 import aboutimg from "../../assets/images/aboutimg.png";
+import cyfa from "../../assets/images/CYFA.svg";
+import ayc from "../../assets/images/AYC.svg";
+import fyw from "../../assets/images/FYW.svg";
+import mt from "../../assets/images/MT.svg";
 
 function Hero() {
   return (
@@ -27,10 +31,30 @@ function Hero() {
       <div id="services">
         <h3>What can I do with PayNex?</h3>
         <div className={style.SCards}>
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
+          <Card
+            message={"Create your free account"}
+            subtxt={
+              "PayNex is totally free! Create your own account and enjoy the benefits"
+            }
+            img={cyfa}
+          />
+          <Card
+            message={"Add your cards"}
+            subtxt={"You can have all your cards in one place."}
+            img={ayc}
+          />
+          <Card
+            message={"Fund your Wallet"}
+            subtxt={"Fund  your account whenever you want, free of charge."}
+            img={fyw}
+          />
+          <Card
+            message={"Make transfers"}
+            subtxt={
+              "You can transfer money to other accounts, there is no charge either."
+            }
+            img={mt}
+          />
         </div>
       </div>
       <div id="about">

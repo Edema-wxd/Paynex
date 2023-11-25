@@ -1,0 +1,35 @@
+.Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 2.8125rem;
+  background: #3d3d3d;
+  width: fit-content;
+  margin: auto;
+  gap: 5.1875rem;
+  padding: 2.9375rem 3rem 0rem 2.875rem;
+  div {
+    display: flex;
+    flex-direction: column;
+    max-width: 27rem;
+  }
+
+  p {
+    color: #cdcdcd;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  h5 {
+    margin: 0;
+    color: #fff;
+    font-size: 2.33863rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  img {
+    max-width: 27rem;
+  }
+}
