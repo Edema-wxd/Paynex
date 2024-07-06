@@ -24,6 +24,7 @@ function Hero() {
             <button>Transfers</button>
             <button>Debit</button>
             <button>Credit</button>
+            <button>Activity</button>
           </div>
         </div>
         <img src={himg} alt="" />
